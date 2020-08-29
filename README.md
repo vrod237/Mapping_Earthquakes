@@ -19,6 +19,6 @@
 
 - Access GeoJSON data website <a href="https://vrod237.github.io/Mapping_Earthquakes/">here</a>
 - The map displays all earthquake data over the past 7 days and it also shows where all tectonic plates are located around the world.
-_ By clicking on one of the circles, that represents and earthquake, you can view the magnitude and the location of where the earthquake occurred. 
+- By clicking on one of the circles, that represents and earthquake, you can view the magnitude and the location of where the earthquake occurred. 
 - You can choose to toggle the map view from 4 different styles: Street View, Satellite View, Light View and Dark View. 
 - You can also choose to toggle the earthquake and tectonic plate data, they both are defaulted to appear.
