@@ -11,16 +11,10 @@
 
 
 ## Resources
-- Data Source: [BellyButton Sample Info](https://github.com/vrod237/BellyButton/blob/master/samples.json)
+- Data Source: [Earthquake Data](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson)
+- Data Source: [Fault Line Data](https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json)
 - Software: Visual Studio Code, 1.38.1, JavaScript, HTML5, CSS & D3.js
 
 ## Summary
 
 
-- Access BellyButton Analysis website <a href="https://vrod237.github.io/BellyButton/">here</a>
-
-- The Demographic Info lists the ID number, ethnicity, gender, age, location, bbtype and belly button wash frequency per week. 
-
-- The Bar Chart lists the top 10 OTUs found in the individual based off the ID number selected in the Test Subject ID No.
-
-- The Bubble Chart displays the relative frequency of all bacterial species found in a volunteer's navel, based off their ID number.
