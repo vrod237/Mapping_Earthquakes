@@ -32,14 +32,13 @@ let baseMaps = {
 	"Dark": dark
   };
 
-// Create the earthquake layer for the map.
+// Create the earthquake and tectonic plate layer for the map.
 let earthquakes = new L.layerGroup();
 
-// Create the tectonic plate layer for the map
+
 let tectonic_plates = new L.layerGroup();
 
-// We define an object that contains the overlays.
-// This overlay will be visible all the time.
+
 let overlays = {
 	"Earthquakes": earthquakes,
 	"Tectonic Plates": tectonic_plates
@@ -55,7 +54,6 @@ let map = L.map('mapid', {
 // Then we add a control to the map that will allow the user to change
 // which layers are visible.
 L.control.layers(baseMaps, overlays).addTo(map);
-
 
 
 // Retrieve the earthquake GeoJSON data.
@@ -107,21 +105,20 @@ function getColor(magnitude) {
 
 // Creating a GeoJSON layer with the retrieved data.
 L.geoJson(data, {
-    // We turn each feature into a circleMarker on the map.
+    // Turn each feature into a circleMarker on the map.
     pointToLayer: function(feature, latlng) {
         console.log(data);
         return L.circleMarker(latlng);
       },
-    // We set the style for each circleMarker using our styleInfo function.
+    // Set the style for each circleMarker using our styleInfo function.
   style: styleInfo,
-    // We create a popup for each circleMarker to display the magnitude and
-    //  location of the earthquake after the marker has been created and styled.
+    // Create a popup for each circleMarker to display the magnitude
     onEachFeature: function(feature, layer) {
     layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
   }
 }).addTo(earthquakes);
 	
-	// Then we add the earthquake layer to the map.
+	// Add the earthquake layer to the map.
 	earthquakes.addTo(map);
 }); 
 // Create a legend control object.
@@ -155,13 +152,11 @@ for (var i = 0; i < magnitudes.length; i++) {
 
 legend.addTo(map);
 
-
-
-// Fault line data found on github
+// Data for fault line
 let faultLineData = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";
 
 let lineStyle = {
-	color: "#ff7438",
+	color: "#ff4e20",
 	weight: 2
 };
 
@@ -176,9 +171,6 @@ d3.json(faultLineData).then(function(data) {
 
 	// Add tectonic plates layer to map
 	tectonic_plates.addTo(map);
-
-
-
 
 });
 	
