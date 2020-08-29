@@ -22,4 +22,4 @@
 - By clicking on one of the circles, that represents and earthquake, you can view the magnitude and the location of where the earthquake occurred. 
 - You can choose to toggle the map view from 4 different styles: Street View, Satellite View, Light View and Dark View. 
 - You can also choose to toggle the earthquake and tectonic plate data, they both are defaulted to appear. <br>
-<br><hr>![Map_Earthquake_Data](https://github.com/vrod237/Mapping_Earthquakes/blob/master/Screen%20Shot%202020-08-29%20at%2010.08.00%20AM.png)
+<br><hr><br>![Map_Earthquake_Data](https://github.com/vrod237/Mapping_Earthquakes/blob/master/Screen%20Shot%202020-08-29%20at%2010.08.00%20AM.png)
