@@ -1,5 +1,10 @@
 # Mapping_Earthquakes
 
+## Purpose
+
+The purpose of this project wass to build a map that tracks not only the
+earthquakes for the past 7 days, but the magnitude as well. The map also includes popup info for each incident.
+
 ## Project Overview
 
 - Use d3.json() to get tectonic plate data and add the data using the L.geoJSON() layer.
